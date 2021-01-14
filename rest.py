@@ -3,23 +3,19 @@ import namedEntityRecognitionService
 import spacy
 
 userInput=[]
-namedEntityRecognition=[]
 
 @get("/userInput")
 def getAll():
   return {"userInput":userInput}
 
-@get('/namedEntityRecognition')
-def getAll():
-  return {'namedEntityRecognition': namedEntityRecognition}
 
 @post('/userInput')
 def addOne():
-  #newInput= {'userText' : request.json.get('name'), 'textUserInput' : request.json.get('text')}
   newInput= {'text' : request.json.get('text')}
   #userInput.append(newInput)
   userInput.insert(0, newInput)
   return {'userInput': userInput}
+
 
 @get("/analysis")
 def getAnalysis():
@@ -33,17 +29,7 @@ def getAnalysis():
         return {'result': result}
 
     else:
-        return "no text to analyze"
-
-#@get("/refresh")
-#def refresh():
-#    while userInput.count()>0:
-#        userInput.pop()
-
-#    while namedEntityRecognition.count()>0:
-#        namedEntityRecognition.pop()
-
-#    return {'refreshed': 'Yes'}
+        return {'result': 'There was no provided text to analyze'}
 
 
 run(reloader=True, debug=True)
