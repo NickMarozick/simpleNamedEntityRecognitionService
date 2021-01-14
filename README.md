@@ -27,3 +27,7 @@ You should have a browser automatically open up, but if not go to the web browse
 5) Click on the button 'Run Service' 
 6) The text data will be sent via HTTP post to our bottle server. The bottle server utilizes spacy and runs the named entity recognition and returns the JSON result to our UI via GET which populates on the screen
 
+# To Do:
+
+- in /service, update the Dockerfile so that it successfully creates the docker image for our bottle server and runs properly
+- With both working Dockerfiles, implement Docker compose to use "docker-compose up" for the initial project build
