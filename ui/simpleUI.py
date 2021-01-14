@@ -30,10 +30,12 @@ if runService:
       url= 'http://127.0.0.1:8080/userInput'
       postRequest = requests.post(url, json=jsonDataInput)
 
+      #postRequest = requests.post('http://host.docker.internal:8080/userInput', json=jsonDataInput)
+
 #-------- Call to a Get Service that runs the Named Entity Recognition ------------
 
       res2= requests.get('http://localhost:8080/analysis')
-
+      #res2= requests.get('http://host.docker.internal:8080/analysis')
       st.write(res2.text)
 
 #---------- Get Request to Get All User Input ------------------
