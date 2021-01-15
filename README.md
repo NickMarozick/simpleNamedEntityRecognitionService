@@ -11,14 +11,11 @@ After cloning the repo, run: 'pip3 install -f requirements.txt'
 # You will need to Build the UI and Service Seperately 
 
 Get the Bottle Server Started First
-1) 'cd service' 
-2) python3 server.py
+1) python3 server.py
 
-3) Leave this terminal open and open a new terminal window
+2) Leave this terminal open and open a new terminal window
 
 Starting the Streamlit UI
-1) 'cd ..'
-2) 'cd ui' 
 3) streamlit run simpleUI.py
 
 You should have a browser automatically open up, but if not go to the web browser and navigate to http://localhost:8501
