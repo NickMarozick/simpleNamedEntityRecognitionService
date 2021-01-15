@@ -16,9 +16,10 @@ Get the Bottle Server Started First
 2) Leave this terminal open and open a new terminal window
 
 Starting the Streamlit UI
-3) streamlit run simpleUI.py
 
-You should have a browser automatically open up, but if not go to the web browser and navigate to http://localhost:8501
+3) In the new terminal window input 'streamlit run simpleUI.py'
+
+You should have a browser automatically open up, but if not go to the web browser and navigate to the Local URL it says, most likely: http://localhost:8501
 
 4) Input text into the text box 
 5) Click on the button 'Run Service' 
