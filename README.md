@@ -19,7 +19,7 @@ Starting the Streamlit UI
 
 3) In the new terminal window input 'streamlit run simpleUI.py'
 
-You should have a browser automatically open up, but if not go to the web browser and navigate to the Local URL it says, most likely: http://localhost:8501
+You should have a browser automatically open up, but if not go to the web browser and navigate to the Local URL it shares, most likely: http://localhost:8501
 
 4) Input text into the text box 
 5) Click on the button 'Run Service' 
