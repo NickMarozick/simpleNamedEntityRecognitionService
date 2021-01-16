@@ -6,7 +6,7 @@ Thank you for your time reviewing my work.
 
 Make sure you are using python3 
 
-After cloning the repo, run: 'pip3 install -f requirements.txt'
+After cloning the repo, run: 'pip3 install -r requirements.txt'
 
 # You will need to Build the UI and Service Seperately 
 
