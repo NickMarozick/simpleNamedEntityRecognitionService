@@ -32,9 +32,9 @@ def getAnalysis():
         return {'result': 'There was no provided text to analyze'}
 
 
-#run(host="localhost", port=8080, reloader=True, debug=True)
+run(host="0.0.0.0", port=8080, reloader=True, debug=True)
 
-run(reloader=True, debug=True)
+#run(reloader=True, debug=True)
 
 #if __name__ == "__main__":
     #run(host="0.0.0.0", port=8080, debug=True, reloader=True)

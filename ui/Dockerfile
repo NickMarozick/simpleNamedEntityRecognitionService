@@ -10,4 +10,4 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-CMD streamlit run simpleUI.py
+CMD streamlit run simpleUI.py --server.port 8081 --server.address 0.0.0.0
