@@ -20,10 +20,11 @@ def addOne():
 
 @get("/analysis")
 def getAnalysis():
-    print(userInput)
-    print(userInput[0]['text'])
-    text= userInput[0]['text']
-    if text:
+    if not userInput:
+        return {'result': 'No user input was provided'}
+
+    elif userInput[0]['text']:
+        text = userInput[0]['text']
         print(text)
 
         result = namedEntityRecognitionService.runAnalysis(text)

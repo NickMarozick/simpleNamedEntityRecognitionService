@@ -10,7 +10,7 @@ def getAll():
 
 
 @post('/userInput')
-def addOne():
+def userInputPost():
   newInput= {'text' : request.json.get('text')}
   #userInput.append(newInput)
   userInput.insert(0, newInput)
@@ -19,9 +19,11 @@ def addOne():
 
 @get("/analysis")
 def getAnalysis():
-    print(userInput[0]['text'])
-    text= userInput[0]['text']
-    if text:
+    if not userInput:
+        return {'result': 'No user input was provided'}
+
+    if userInput[0]['text']:
+        text = userInput[0]['text']
         print(text)
 
         result = namedEntityRecognitionService.runAnalysis(text)
