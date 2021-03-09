@@ -9,10 +9,10 @@ userInput= st.text_input('Input the Text to be Analyzed Here:')
 
 runService = st.button('Run Service!')
 
-serverIPAddress="http://0.0.0.0"
-port="8080"
+#serverIPAddress="http://0.0.0.0"
+#port="8080"
 
-url = serverIPAddress + ":" + port
+#url = serverIPAddress + ":" + port
 
 if runService:
 
@@ -30,15 +30,15 @@ if runService:
 
       #st.write(jsonDataInput)
 
-      #url= 'http://0.0.0.0:8080/userInput'
-      url = serverIPAddress + ":" + port
-      print(url)
+      url= 'http://0.0.0.0:8080/userInput'
+      #url = serverIPAddress + ":" + port
+      #print(url)
       postRequest = requests.post(url, json=jsonDataInput)
 
 #-------- Call to a Get Service that runs the Named Entity Recognition ------------
 
-      #res2= requests.get('http://0.0.0.0:8080/analysis')
-      res2 = requests.get('%s:%s/analysis' % (serverIPAddress, port))
+      res2= requests.get('http://0.0.0.0:8080/analysis')
+      #response = requests.get('%s:%s/analysis' % (serverIPAddress, port))
       st.write(res2.text)
 
 #---------- Get Request to Get All User Input ------------------

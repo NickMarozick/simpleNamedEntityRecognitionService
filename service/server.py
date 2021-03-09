@@ -12,6 +12,7 @@ def getAll():
 @post('/userInput')
 def addOne():
   newInput= {'text' : request.json.get('text')}
+  print(newInput)
   #userInput.append(newInput)
   userInput.insert(0, newInput)
   return {'userInput': userInput}
@@ -19,6 +20,7 @@ def addOne():
 
 @get("/analysis")
 def getAnalysis():
+    print(userInput)
     print(userInput[0]['text'])
     text= userInput[0]['text']
     if text:
@@ -34,9 +36,8 @@ def getAnalysis():
 
 run(host="0.0.0.0", port=8080, reloader=True, debug=True)
 
-#run(reloader=True, debug=True)
 
 #if __name__ == "__main__":
-    #run(host="0.0.0.0", port=8080, debug=True, reloader=True)
+#    run(host="0.0.0.0", port="8080", debug=True, reloader=True)
 
     #run(reloader=True, debug=True)
