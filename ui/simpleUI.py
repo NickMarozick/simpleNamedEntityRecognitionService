@@ -1,6 +1,5 @@
 import streamlit as st
 import requests
-#import os
 import json
 
 st.title("Simple UI to Showcase Named Entity Recognition")
@@ -9,10 +8,7 @@ userInput= st.text_input('Input the Text to be Analyzed Here:')
 
 runService = st.button('Run Service!')
 
-#serverIPAddress="http://0.0.0.0"
 #port="8080"
-
-#url = serverIPAddress + ":" + port
 
 if runService:
 
@@ -25,21 +21,21 @@ if runService:
 
       dataInput={}
       dataInput['text']= userInput
+
       jsonDataInput= json.dumps(dataInput)
       jsonDataInput= eval(jsonDataInput)
 
-      #st.write(jsonDataInput)
+      #url= 'http://0.0.0.0:8080/userInput'
+      url= 'http://bottleserver:8080/userInput'
 
-      url= 'http://0.0.0.0:8080/userInput'
-      #url = serverIPAddress + ":" + port
-      #print(url)
       postRequest = requests.post(url, json=jsonDataInput)
 
 #-------- Call to a Get Service that runs the Named Entity Recognition ------------
 
-      res2= requests.get('http://0.0.0.0:8080/analysis')
-      #response = requests.get('%s:%s/analysis' % (serverIPAddress, port))
-      st.write(res2.text)
+      #res2= requests.get('http://0.0.0.0:8080/analysis')
+      namedEntityResponse=requests.get('http://bottleserver:8080/analysis')
+
+      st.write(namedEntityResponse.text)
 
 #---------- Get Request to Get All User Input ------------------
 

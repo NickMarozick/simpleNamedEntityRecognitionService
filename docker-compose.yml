@@ -5,8 +5,6 @@ services:
     build: service/
     ports:
       - 8080:8080
-    networks:
-      - deploy_network
     container_name: bottleserver
 
   streamlit:
@@ -15,10 +13,4 @@ services:
       - bottleserver
     ports:
         - 8081:8081
-    networks:
-      - deploy_network
     container_name: streamlit
-
-networks:
-  deploy_network:
-    driver: bridge
