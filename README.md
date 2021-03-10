@@ -1,4 +1,4 @@
-# nick-1700
+# Simple Named Entity Recognition Service
 
 Simple streamlit UI to showcase Spacy entity recognition service. Instructions below to run locally or via docker compose
 
