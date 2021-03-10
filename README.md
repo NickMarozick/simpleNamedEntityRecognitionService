@@ -2,7 +2,7 @@
 
 Simple streamlit UI to showcase Spacy entity recognition service. Instructions below to run locally or via docker compose
 
-# Running via Docker-compose
+# How to Run via Docker-compose
 
 1) Clone the project repo
 2) Once you have navigated to the project directory in terminal:
