@@ -17,7 +17,9 @@ Simple streamlit UI to showcase Spacy entity recognition service. Instructions b
 
 Make sure you are using python3
 
-After cloning the repo, run: 'pip3 install -r requirements.txt'
+After cloning the repo, navigate into ther runLocal directory
+
+Once in the directory, run: 'pip3 install -r requirements.txt'
 
 # You will need to Build the UI and Service Seperately
 
