@@ -1,6 +1,6 @@
 # Simple Named Entity Recognition Service
 
-Simple streamlit UI to showcase Spacy entity recognition service. Instructions below to run locally or via docker compose
+Simple streamlit UI, utilizing a bottle.py server,showcasing the Spacy entity recognition service. Please find the instructions below to run locally or via docker compose.
 
 # How to Run via Docker-compose
 
