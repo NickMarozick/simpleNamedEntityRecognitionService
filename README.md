@@ -23,12 +23,12 @@ Once in the directory, run: ```pip3 install -r requirements.txt```
 
 # You will need to Build the UI and Service Seperately
 
-Get the Bottle Server Started First
+*Get the Bottle Server Started First*
 1. ```python3 server.py```
 
 1. Leave this terminal open and open a new terminal window
 
-Starting the Streamlit UI
+*Starting the Streamlit UI*
 
 1. In the new terminal window input ```streamlit run simpleUI.py```
 1. You browser should automatically open up, but if not go to the web browser and navigate to the Local URL link noted in terminal
