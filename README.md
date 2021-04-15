@@ -5,8 +5,7 @@ Simple streamlit UI, utilizing a bottle.py server,showcasing the Spacy entity re
 # How to Run via Docker-compose
 
 1. Clone the project repo
-1. Once you have navigated to the project directory in terminal:
-   On the command line: 
+1. Once you have navigated to the project directory in terminal, run these commands:
    1. ```docker-compose up```
    1. ```docker-compose build```
 1. You will see the URL that can access the UI for the app, http://0.0.0.0:8081
