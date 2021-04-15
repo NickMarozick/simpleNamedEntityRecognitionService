@@ -31,9 +31,7 @@ Get the Bottle Server Started First
 Starting the Streamlit UI
 
 1. In the new terminal window input ```streamlit run simpleUI.py```
-
-You should have a browser automatically open up, but if not go to the web browser and navigate to the Local URL it shares, most likely: http://localhost:8501
-
+1. You browser should automatically open up, but if not go to the web browser and navigate to the Local URL link noted in terminal
 1. Input text into the text box
 1. Click on the button 'Run Service'
 1. The text data will be sent via HTTP post to our bottle server. The bottle server utilizes spacy and runs the named entity recognition and returns the JSON result to our UI via GET which populates on the screen
